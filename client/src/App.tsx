@@ -5,6 +5,8 @@ import Home from "@/pages/Home";
 import Patients from "@/pages/Patients";
 import Doctors from "@/pages/Doctors";
 import Appointments from "@/pages/Appointments";
+import Settings from "@/pages/Settings";
+import Reports from "@/pages/Reports";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
@@ -16,6 +18,8 @@ function Router() {
       <Route path={"/patients"} component={Patients} />
       <Route path={"/doctors"} component={Doctors} />
       <Route path={"/appointments"} component={Appointments} />
+      <Route path={"/settings"} component={Settings} />
+      <Route path={"/reports"} component={Reports} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
